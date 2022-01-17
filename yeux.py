@@ -1,10 +1,14 @@
+"""
+Yeux returns a normalized sine wave indicating the movement of both eyes
+usage: python yeux.py <Path to Video>
+"""
+
 import cv2
 import sys
 import numpy as np
 import scipy.optimize
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-cap = cv2.VideoCapture("TV.mp4")
 
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")
 facemarks = cv2.face.createFacemarkLBF()
